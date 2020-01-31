@@ -39,9 +39,8 @@ class Song
    self.all.detect {|i| i.name == match_string}
  end
  
- def self.find_or_create_by_name
+ def self.find_or_create_by_name(string_fing)
    
-   Song.find_by_name
-   Song.create_by_name
+   
  end
 end
