@@ -41,6 +41,8 @@ class Song
  
  def self.find_or_create_by_name(string_fing)
    
-   foun_name = 
+   foun_name = self.all.detect {|i| i.name == string_fing}
+   
+   if foun_name == 
  end
 end
