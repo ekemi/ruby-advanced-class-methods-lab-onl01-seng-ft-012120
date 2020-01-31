@@ -44,6 +44,7 @@ class Song
    foun_name = self.all.detect {|i| i.name == string_fing}
    
    if foun_name == nil 
+     s = self.new
      s
  end
 end
