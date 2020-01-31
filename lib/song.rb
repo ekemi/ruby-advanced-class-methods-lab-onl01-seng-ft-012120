@@ -25,4 +25,12 @@ class Song
    p
    
  end
+ 
+ def self.create_by_name(s_name)
+   
+   y = self.new
+   y.name = s_name
+   y
+ end
+   
 end
