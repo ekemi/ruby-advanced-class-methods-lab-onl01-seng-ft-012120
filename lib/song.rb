@@ -41,6 +41,6 @@ class Song
  
  def self.find_or_create_by_name(string_fing)
    
-   
+   foun_name = 
  end
 end
