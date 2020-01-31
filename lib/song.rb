@@ -40,15 +40,7 @@ class Song
  end
  def self.find_or_create_by_name(find)
   
-    find_it = self.all.detect {|x| x.name == find}
-    if find_it == nil
-      s = self.new 
-      s.name = find
-      s.save 
-      s
-    else
-      find_it
-    end
+   
   end
    def self.alphabetical
     self.all.sort_by { |x| x.name}
