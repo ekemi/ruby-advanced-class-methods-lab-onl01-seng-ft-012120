@@ -45,6 +45,7 @@ class Song
    
    if foun_name == nil 
      s = self.new
+     s.name = string_fing
      s
  end
 end
