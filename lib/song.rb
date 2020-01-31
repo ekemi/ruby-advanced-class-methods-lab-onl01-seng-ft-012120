@@ -50,5 +50,8 @@ class Song
       find_it
     end
   end
-   
+   def self.alphabetical
+    self.all.sort_by { |x| x.name}
+  end 
+  
 end
