@@ -39,16 +39,5 @@ class Song
    self.all.detect {|i| i.name == match_string}
  end
  
- def self.find_or_create_by_name(string_fing)
    
-  found = self.all.detect {|x| x.name == string_fing}
-    if found == nil
-      s = self.new 
-      s.name = string_fing
-      s.save 
-      s
-    else
-      found
-    end
-  end   
 end
