@@ -30,6 +30,7 @@ class Song
    
    y = self.new
    y.name = s_name
+   y.save
    y
  end
    
