@@ -50,6 +50,7 @@ class Song
      s 
      
    else
-     
+     foun_name
+   end
  end
 end
