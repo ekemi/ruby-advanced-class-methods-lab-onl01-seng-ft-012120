@@ -53,5 +53,32 @@ class Song
    def self.alphabetical
     self.all.sort_by { |x| x.name}
   end 
+  def self.new_from_filename(mp3_formatted)
   
+    c = self.new 
+    c.name = mp3_formatted.split(/[^a-zA-Z\s]|\s-\s/)[1] 
+    c.artist_name = mp3_formatted.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    c
+  end 
+  
+  def self.create_from_filename(mp3_formatted_file)
+    
+    c = self.new 
+    c.name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[1] 
+    c.artist_name = mp3_formatted_file.split(/[^a-zA-Z\s]|\s-\s/)[0]
+    c.save
+    c
+  end 
+ 
+  def self.all
+    @@all
+  end
+ 
+  def save
+    self.class.all << self
+  end
+  
+  def self.destroy_all
+    self.all.clear
+  end
 end
