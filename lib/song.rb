@@ -33,5 +33,7 @@ class Song
    y.save
    y
  end
+ 
+ def .find_by_name
    
 end
