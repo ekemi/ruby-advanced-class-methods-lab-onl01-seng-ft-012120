@@ -36,4 +36,6 @@ class Song
  
  def .find_by_name(match_string)
    
+   self.all.detect do {|i| i.name == match_string}
+   
 end
