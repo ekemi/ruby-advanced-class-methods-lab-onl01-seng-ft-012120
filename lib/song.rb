@@ -21,8 +21,8 @@ class Song
  def self.new_by_name (string_name)
    
    p = self.new 
-   s.name = string_name
-   s
+   p.name = string_name
+   p
    
  end
 end
