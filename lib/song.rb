@@ -37,5 +37,5 @@ class Song
  def self.find_by_name(match_string)
    
    self.all.detect {|i| i.name == match_string}
-   
+ end
 end
