@@ -34,6 +34,6 @@ class Song
    y
  end
  
- def .find_by_name
+ def .find_by_name(match_string)
    
 end
